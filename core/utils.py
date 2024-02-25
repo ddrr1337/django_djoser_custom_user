@@ -2,7 +2,6 @@ import jwt
 from rest_framework.exceptions import AuthenticationFailed
 from core.models import User
 from django.conf import settings
-import os
 from django.contrib.gis.geos import Point
 
 def get_user_from_token(request):
