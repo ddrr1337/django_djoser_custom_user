@@ -1,6 +1,6 @@
 # Django Base with Custom User and JWT Authentication
 
-This repository provides a Django project base with a custom user model and an authentication system implemented using Djoser and JWT.
+This repository provides a Django project base with a custom user model, an authentication system implemented using Djoser JWT, and a base config for a connection to a postgres DB.
 
 ## Features
 
