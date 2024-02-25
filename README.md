@@ -49,7 +49,8 @@ This repository provides a Django project base with a custom user model and an a
 
 ## Usage
 
-You can start building your application on this base. Make sure to check Djoser's documentation to understand how to use the provided endpoints for authentication.
+You can start building your application on this base. Check [Djoser's documentation](https://djoser.readthedocs.io/en/latest/) to understand how to use the provided endpoints for authentication.
+
 
 ## Contribute
 
