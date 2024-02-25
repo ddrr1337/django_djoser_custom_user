@@ -1,26 +1,17 @@
 version: "3.1"
 
 services:
-  parquecar_backend:
+  backend:
     build:
-      context: ./parquecar_backend2
+      context: ./django_djoser_custom_user
       dockerfile: Dockerfile
-    image: parquecar-image:v1
+    image: backend-image:v1
     environment:
       - PORT=8000
     env_file:
       - parquecar_backend2/backend/.env
     ports:
-      - "8001:8000"
+      - "8000:8000"
     volumes:
       - ./media_files:/app/media
       - ./static:/app/static
-
-  parquecar_frontend:
-    build:
-      context: ./parquecar_frontend
-      dockerfile: Dockerfile
-    image: parquecar_frontend:v1
-
-    ports:
-      - "3003:3000"
