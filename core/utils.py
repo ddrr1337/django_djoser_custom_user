@@ -10,7 +10,7 @@ def get_user_from_token(request):
     if not authorization_header:
         raise AuthenticationFailed('No Auth Header Provided')
 
-    token = authorization_header.split()[1]  # Suponiendo que el formato es "Bearer <token>"
+    token = authorization_header.split()[1]  #Supossing formar is: "Bearer <token>"
 
     try:
     

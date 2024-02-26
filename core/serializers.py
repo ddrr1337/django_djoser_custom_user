@@ -10,9 +10,6 @@ class ProfileSerializer(serializers.ModelSerializer):
         exclude = ['id','user']
 
 
-
-
-
 class UserSerializer(serializers.ModelSerializer):
 
     profile = ProfileSerializer(read_only=True)
