@@ -64,7 +64,7 @@ class User(AbstractUser):
 
     username = None
     email = models.EmailField(unique=True)
-    activation_code = models.CharField(max_length=100,null=True)
+    
 
     
     USERNAME_FIELD = "email"
