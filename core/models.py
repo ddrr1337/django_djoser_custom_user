@@ -53,9 +53,7 @@ class UserManager(BaseUserManager):
 
         return self._create_user(email, password, **extra_fields)
     
-    def generate_activation_code(self):
-  
-        return str(random.randint(10000, 99999))
+
 
 
 
@@ -64,7 +62,7 @@ class User(AbstractUser):
 
     username = None
     email = models.EmailField(unique=True)
-    
+
 
     
     USERNAME_FIELD = "email"
